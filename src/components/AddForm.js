@@ -20,7 +20,7 @@ const AddForm = (props) => {
     const handleSubmit = e => {
         e.preventDefault();
         if (state.name === "" || state.position === "" || state.nickname === "") {
-            props.dispatch(addError("There is an error! Fill out all inputs!"))
+            props.dispatch(addError("There is an error! Fill out all inputs including name , position , and nickname!"))
         } else{
             props.dispatch(addSmurf(state))
         }
